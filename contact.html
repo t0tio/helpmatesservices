@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book Now | HelpMate Services Colorado</title>
+<meta name="description" content="Book HelpMate Services for moving, junk hauling, cleaning, and more in Colorado. Free quotes." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="navbar" id="navbar" role="navigation">
+    <div class="container">
+        <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="HelpMate Services" />
+            <span class="logo-text">HELPMATE <span class="brand-span">SERVICES</span></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="navLinks" role="menu">
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html" class="nav-cta active">Book Now</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h1>Book Your <span class="highlight">Service</span></h1>
+        <p class="lead">Fill out the form below and we'll get back to you with a free, no-obligation quote.</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <div class="info-item">
+                    <div class="label">Phone</div>
+                    <div class="value"><a href="tel:+17207424880">+1 720-742-4880</a></div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Email</div>
+                    <div class="value"><a href="mailto:fishwithhelpmateservices@gmail.com">fishwithhelpmateservices@gmail.com</a></div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Follow Us</div>
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/profile.php?id=61554790392397&mibextid=wwXlfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/helpmate_services_llc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@helpmate.servicesllc" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="info-item" style="border-bottom:none;">
+                    <div class="label">Service Areas</div>
+                    <div class="value" style="font-size:0.85rem;font-weight:300;color:var(--gray-500);">Denver · Thornton · Boulder · Surrounding Areas</div>
+                </div>
+            </div>
+
+            <div class="contact-form reveal">
+                <form id="contactForm" novalidate>
+                    <div class="form-group"><label for="formName">Full Name *</label><input type="text" id="formName" placeholder="Your name" required><div class="form-error" id="nameError">Please enter your name.</div></div>
+                    <div class="form-group"><label for="formEmail">Email *</label><input type="email" id="formEmail" placeholder="you@email.com" required><div class="form-error" id="emailError">Please enter a valid email.</div></div>
+                    <div class="form-group"><label for="formPhone">Phone Number *</label><input type="tel" id="formPhone" placeholder="Your phone number" required><div class="form-error" id="phoneError">Please enter your phone number.</div></div>
+                    <div class="form-group"><label for="formSubject">Service Needed *</label>
+                        <select id="formSubject" required>
+                            <option value="">Select...</option>
+                            <option value="moving">Local Moves</option>
+                            <option value="junk">Junk & Materials Hauling</option>
+                            <option value="loading">Loading & Unloading</option>
+                            <option value="furniture">Furniture Moving</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="landscaping">Landscaping / Snow Removal</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label for="formStairs">Are there any stairs?</label>
+                        <select id="formStairs">
+                            <option value="no">No</option>
+                            <option value="yes-1">Yes, just one</option>
+                            <option value="yes-more">Yes, more than 1</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label for="formMessage">Details (Start/End Address, Date) *</label><textarea id="formMessage" placeholder="Please provide the date, addresses, and any other details..." required></textarea><div class="form-error" id="messageError">Please describe what you're looking for.</div></div>
+                    <div class="contact-consent">
+                        <input type="checkbox" id="formConsent" required>
+                        <label for="formConsent">I agree that this data will be stored and processed to respond to my inquiry.</label>
+                    </div>
+                    <div class="form-error" id="consentError" style="margin-top:-8px;margin-bottom:10px;">Please agree to the data processing terms.</div>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmit">Request Quote</button>
+                    <div class="form-success" id="formSuccess">Request sent! We'll get back to you shortly.</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="map" class="section-padding" style="background: var(--black-light);">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="section-label">Our Area</span>
+            <h2 class="section-title">Serving <span class="highlight">Colorado</span></h2>
+        </div>
+        <div class="map-wrapper reveal">
+            <iframe src="https://www.google.com/maps?q=Denver,Colorado,USA&output=embed" loading="lazy" title="HelpMate Services service area map"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">HELPMATE <span>SERVICES</span></div>
+                <p>Your helping hand for life's to-do list. Moving, junk hauling, cleaning, and more in Colorado. Reliable, affordable, and fully insured.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Local Moves</a></li>
+                    <li><a href="services.html">Junk Hauling</a></li>
+                    <li><a href="services.html">Loading & Unloading</a></li>
+                    <li><a href="services.html">Furniture Moving</a></li>
+                    <li><a href="services.html">Cleaning</a></li>
+                    <li><a href="services.html">Landscaping</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Book Now</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61554790392397&mibextid=wwXlfr" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/helpmate_services_llc/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@helpmate.servicesllc" target="_blank" rel="noopener">TikTok</a></li>
+                    <li><a href="tel:+17207424880">Call Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 HelpMate Services. All rights reserved.</span>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61554790392397&mibextid=wwXlfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/helpmate_services_llc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@helpmate.servicesllc" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="floating-buttons">
+    <a href="tel:+17207424880" class="floating-btn call" aria-label="Call HelpMate"><i class="fas fa-phone"></i></a>
+    <a href="sms:+17207424880" class="floating-btn accent" aria-label="Text HelpMate"><i class="fas fa-comment-dots"></i></a>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
